@@ -40,10 +40,6 @@ mvn clean install
 
 ### Launch
 
-You can run the game by launching the [PocketImperium](./target/PocketImperium/bin/PocketImperium.bat) file.
-
-Alternatively, you can use :
-
 ```bash
 mvn javafx:run
 ```
