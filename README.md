@@ -2,23 +2,23 @@
 
 ## 📝 Description
 
-Pocket Imperium est un jeu de stratégie spatiale 3X (eXplore, eXpand, eXterminate) développé en Java avec JavaFX. Le jeu oppose 3 joueurs qui s'affrontent pour le contrôle de secteurs galactiques.
+Pocket Imperium is a 3X (eXplore, eXpand, eXterminate) space strategy game developed in Java with JavaFX. The game pits 3 players against each other for control of galactic sectors.
 
-## 🎮 Caractéristiques principales
+## 🎮 Main Features
 
-- Interface graphique complète avec JavaFX
-- Système de combat et de déplacement sur une grille hexagonale 
-- Trois types d'actions possibles : Explorer, Étendre et Exterminer
-- 3 types de bots avec différentes stratégies :
-  - Bot Offensif
-  - Bot Défensif
-  - Bot Aléatoire
-- Système de score et de victoire
-- Sauvegarde/chargement de partie
-- Musique et effets sonores
-- Log des actions de jeu
+- Full graphical interface with JavaFX
+- Combat and movement system on a hexagonal grid
+- Three possible actions: Explore, Expand, and Exterminate
+- 3 types of bots with different strategies:
+  - Offensive Bot
+  - Defensive Bot
+  - Random Bot
+- Scoring and victory system
+- Save/load game feature
+- Music and sound effects
+- Game action log
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies Used
 
 - Java 21
 - JavaFX 21
@@ -26,11 +26,11 @@ Pocket Imperium est un jeu de stratégie spatiale 3X (eXplore, eXpand, eXtermina
 
 ## ⚙️ Installation
 
-### Prérequis
+### Prerequisites
 
-- JDK 21+ installé
-- Maven 3.13+ installé
-- Variable d'environnement JAVA_HOME configurée
+- JDK 21+ installed
+- Maven 3.13+ installed
+- JAVA_HOME environment variable configured
 
 ### Compilation
 
@@ -38,65 +38,67 @@ Pocket Imperium est un jeu de stratégie spatiale 3X (eXplore, eXpand, eXtermina
 mvn clean install
 ```
 
-### Lancement
+### Launch
+
+You can run the game by launching the [PocketImperium](./target/PocketImperium/bin/PocketImperium.bat) file.
+
+Alternatively, you can use :
 
 ```bash
 mvn javafx:run
 ```
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
 ```plaintext
 src/
 ├── main/
 │   └── java/
 │       └── pimperium/
-│           ├── controllers/    # Contrôleurs MVC
-│           ├── models/         # Modèles de données
-│           ├── views/          # Vues JavaFX
-│           ├── players/        # Logique des joueurs
-│           ├── elements/       # Éléments de jeu
-│           └── utils/         # Classes utilitaires
+│           ├── controllers/    # MVC Controllers
+│           ├── models/         # Data Models
+│           ├── views/          # JavaFX Views
+│           ├── players/        # Player Logic
+│           ├── elements/       # Game Elements
+│           └── utils/          # Utility Classes
 ```
 
-## 🎯 Comment jouer
+## 🎯 How to Play
 
-1. Lancez le jeu
-2. Choisissez le nombre de joueurs humains (0-3)
-3. Choissisez le pseudo de chaque joueur
-4. Pour chaque bot, choisissez sa stratégie
-5. À chaque tour :
-   - Choisissez l'ordre des 3 actions (Explorer, Étendre, Exterminer)
-   - Exécutez les actions dans l'ordre choisi
-   - Marquez des points en contrôlant des systèmes
-6. Le joueur avec le plus de points après 9 tours gagne
+1. Launch the game
+2. Choose the number of human players (0-3)
+3. Choose the nickname for each player
+4. For each bot, choose its strategy
+5. Each turn:
+   - Choose the order of the 3 actions (Explore, Expand, Exterminate)
+   - Execute the actions in the chosen order
+   - Score points by controlling systems
+6. The player with the most points after 9 turns wins
 
-## 🎵 Contrôles
+## 🎵 Controls
 
-- Clic gauche pour sélectionner hexagones et vaisseaux
-- Boutons pour valider les actions
-- Interface de commandes pour choisir l'ordre des actions
-- Zone de texte pour choisir le nombre de vaisseaux ou confirmer des actions
-- Bouton pour mettre en pause la musique
+- Left click to select hexagons and ships
+- Buttons to validate actions
+- Command interface to choose the order of actions
+- Text area to choose the number of ships or confirm actions
+- Button to pause the music
 
-## 💾 Sauvegarde
+## 💾 Save
 
-- Les parties sont sauvegardées à la fin de chaque tour
-- Les sauvegardes sont stockées dans [SavedGames](./SavedGames)
+- Games are saved at the end of each turn
+- Saves are stored in [SavedGames](./SavedGames)
 
-## 👥 Auteurs
+## 👥 Authors
 
-UTT - Université de Technologie de Troyes
+UTT - University of Technology of Troyes
 
 - Romain GOLDENCHTEIN
 - Lucas SCHUMMER
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
-
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## 📚 Documentation
 
-La documentation complète du code est disponible en JavaDoc dans le dossier `doc/`.
-
+The complete code documentation is available in JavaDoc in the `doc/` folder.
